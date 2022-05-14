@@ -8,17 +8,57 @@
   </head>
   <body>
     <script>
-      while (true) {
-        var a, group;
-        a = prompt("Simple Calculator").replace(/[^0-9%^*\/()\-+.]/g, "");
-        group = a.split(" ");
+      function Calculator() {
+        while (true) {
+          var a, group;
+          a = prompt("Simple Calculator");
+          group = a.split(" ");
 
-        if ((Number.parseInt(group[0]) | Number.parseInt(group[2])) > 1000000) {
-          alert("Maksimal angka 1 juta");
-        } else {
-          alert(eval(a));
+          switch (group[1].charAt(0)) {
+            case "+":
+              if (
+                (Number.parseInt(group[0]) | Number.parseInt(group[2])) >
+                1000000
+              ) {
+                alert("Maksimal angka 1 juta");
+              } else {
+                alert(Number.parseInt(group[0]) + Number.parseInt(group[2]));
+              }
+              break;
+            case "-":
+              if (
+                (Number.parseInt(group[0]) | Number.parseInt(group[2])) >
+                1000000
+              ) {
+                alert("Maksimal angka 1 juta");
+              } else {
+                alert(Number.parseInt(group[0]) - Number.parseInt(group[2]));
+              }
+              break;
+            case "*":
+              if (
+                (Number.parseInt(group[0]) | Number.parseInt(group[2])) >
+                1000000
+              ) {
+                alert("Maksimal angka 1 juta");
+              } else {
+                alert(Number.parseInt(group[0]) * Number.parseInt(group[2]));
+              }
+              break;
+            case "/":
+              if (
+                (Number.parseInt(group[0]) | Number.parseInt(group[2])) >
+                1000000
+              ) {
+                alert("Maksimal angka 1 juta");
+              } else {
+                alert(Number.parseInt(group[0]) / Number.parseInt(group[2]));
+              }
+          }
         }
       }
+
+      Calculator();
     </script>
   </body>
 </html>
