@@ -1,6 +1,6 @@
 # sec-calculator
 
-Kalkulator sederhana dikerjakan menggunakan Javascript method eval() dan pengondisian if else.
+
 <br />
 ```bash
 function Calculator() {
