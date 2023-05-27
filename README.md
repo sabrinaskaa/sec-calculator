@@ -1,7 +1,5 @@
 # sec-calculator
 
-
-<br />
 ```bash
 function Calculator() {
   while (true) {
